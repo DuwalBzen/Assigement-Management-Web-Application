@@ -1,0 +1,694 @@
+<!DOCTYPE html><html lang="en">
+  
+<!-- Mirrored from www.biddinghouse.com/fonts/2 by HTTraQt Website Copier/1.x [Karbofos 2012-2017] गुरु, 01 नवम्बर 2018 13:47:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../images_lat/fav_icon.png">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Bidding House</title>
+
+    <!-- Bootstrap Css -->
+    <link href="../css_lat/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../css_lat/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Custom Css -->  
+    <link href="../css_lat/style.css" rel="stylesheet" type="text/css" />
+	<link href="../css_lat/slick.css" rel="stylesheet" type="text/css" />
+    <link href="../css_lat/slick-theme.css" rel="stylesheet" type="text/css" />
+   	<link rel="stylesheet" type="text/css" href="../../netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../fonts.googleapis.com/cssb3c9.css?family=Lato:400,400italic,700,300" />
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js_lat/bootstrap.js"></script>
+	<script>
+    $(document).ready(function() {
+	  $('.sideBarMenu').css('display','none');
+	  $(".more-nav").click(function(){
+		$('.sideBarMenu').css('display','block');
+      });
+	  $(".close-bt").click(function(){
+		$('.sideBarMenu').css('display','none');
+      });
+    });
+
+    </script>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            var screen_width = $(window).width();
+
+            // mobile navigation Starts Here
+            if (screen_width <= 991) {
+                $('ul.navbar-nav li').each(function () {
+                    $(this).find('.expand').click(function () {
+                        $(this).parent().parent().siblings().find('.main-subDrop').slideUp(function () {
+                            if ($(this).css('display') == 'none') {
+                                $(this).parent().find('div span.expand i').removeClass('fa-minus').addClass('fa-plus');
+                            }
+                        });
+                        $(this).parent().parent().find('.main-subDrop').slideToggle(function () {
+                            if ($(this).css('display') == 'none') {
+                                $(this).parent().find('div span.expand i').removeClass('fa-minus').addClass('fa-plus');
+                            } else {
+                                $(this).parent().find('div span.expand i').removeClass('fa-plus').addClass('fa-minus');
+                            }
+                        });
+                    })
+                });
+            }
+            //mobile navigation ends here    
+            // mobile navigation Starts Here
+            if (screen_width <= 991) {
+                $('.footer_li').each(function () {
+                    console.log('first');
+                    $(this).find('.expand-new').click(function () {
+                        $(this).parent().parent().find('#fot-dropdown').slideToggle(function () {
+                           
+                            if ($(this).css('display') == 'none') {
+                                
+                                $(this).parent().find('a span.expand-new i').removeClass('fa-minus').addClass('fa-plus');
+                            } else {
+                                var _current_id = $(this).attr('data');
+                                for (i = 1 ; i <= 8 ; i++) {
+                                    if (i != _current_id) {
+                                        $('.ul_' + i).css('display', 'none');
+                                    }
+                                }
+                             
+                                $('.ul_main').parent().find('a span.expand-new i').removeClass('fa-minus').addClass('fa-plus');
+                                $(this).parent().find('a span.expand-new i').removeClass('fa-plus').addClass('fa-minus');
+                            }
+                        });
+                    })
+                });
+            }
+            //mobile navigation ends here    
+           // Side Panel Starts Here
+            $('.right-panel-collapse ul li').each(function () {
+                $(this).find('.expand-new').click(function () {
+                    var minus_sign = $(this).find('i').hasClass('fa-minus');
+
+                    //console.log(minus_sign);
+                    if (minus_sign == true) {
+                        $(this).parent().parent().find('ol.right-panel-submenu-mobile').slideUp(function () {
+                            if ($(this).css('display') == 'none') {
+                                $(this).parent().find('a span.expand-new i').removeClass('fa-minus').addClass('fa-plus');
+                            } else {
+
+                            }
+                        });
+                    } else {
+                        console.log('else');
+                        $(this).parent().parent().find('ol.right-panel-submenu-mobile').slideDown(function () {
+                            if ($(this).css('display') == 'block') {
+                                $(this).parent().find('.expand-new i').removeClass('fa-plus').addClass('fa-minus');
+                            } else {
+
+                            }
+                        });
+                    }
+                    })
+                });
+            //mobile navigation ends here    
+        });
+</script>
+<style type="text/css">
+        /* NOTE: width and height for div#wn also specified in scrollbar_h.css */
+            div#wn	{ 
+	            position:relative; 
+	            width:166px; height:166px; 
+	            overflow:auto; /* for non-javascript */
+            }
+        /* NOTE: styles for code are in external css file named scrollbar_hv.css.
+        Script segment below writes link tag. */
+    </style>
+<!--    <script src="/js_lat/dw_scroll/js/dw_scroll_c.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function init_dw_Scroll() {
+            // arguments: id of scroll area div, id of content div
+            var wndo = new dw_scrollObj('wn', 'lyr');
+            // args: id, axis ('v' or 'h'), eType (event type for arrows), 
+            // bScrollbar (include track and dragBar? true or false)
+            wndo.buildScrollControls('scrollbar_v', 'v', 'mouseover', true);
+            wndo.buildScrollControls('scrollbar_h', 'h', 'mouseover', true);
+
+        }
+
+        // if code supported, link in the style sheet (optional) and call the init function onload
+        if (dw_scrollObj.isSupported()) {
+            dw_Util.writeStyleSheet('/js_lat/dw_scroll/css/scrollbars_hv.css');
+            dw_Event.add(window, 'load', init_dw_Scroll);
+        }
+    </script>-->
+<script src="../js_lat/jquery.validate.js"></script>
+<script src="../js_lat/function.js"></script>
+  </head>
+<body>
+	<!--<div class="menuOverlay"></div>-->
+	<div class="sideBarMenu">
+		<div class="close-bt"><i class="fa fa-times"></i></div>
+		<ul class="sidemenu">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Commercial</a></li>
+			<li><a href="#">Residential</a></li>
+			<li><a href="#">Private sellers</a></li>
+			<li><a href="#">Agents and brokers</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+		
+		<ul class="menuSocial">
+			<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+		</ul>
+	</div>
+	<!--<div class="sideBarMenu_wrapper">-->
+    <header id="top_header">
+        <div class="container main-header">
+            <div class="header-top">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+						<div class="brand-logo"><a href="../index.html"><img src="../images_lat/bidding_house_logo.png" alt="Bidding House" title="Bidding House" /></a></div>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+							<div class="sidebarMenu" id="menu">
+	<button id="toggleMenu"><i class="fa fa-bars"></i></button>
+	<div style="clear:both;"></div>
+    <ul id="toggleNav">
+		<!--li><a href="http://www.biddinghouse.com/freeValuation">Free Valuations</a></li-->
+		<li><a href="../sell-your-property-online.html">Sell Property</a></li>
+        <li><a href="../live-bid.html">Live Bid</a></li>
+        <li><a href="../bank-owned.html">Bank Owned</a></li>
+        <li><a href="../make-an-offer.html">Make an Offer</a></li>
+		<li>
+            <a class="dropdown_handle" href="../how-it-works/live-bid.html">How it Works</a>
+			<ul class="submenu">
+				<li><a href="../how-it-works/live-bid.html">For Live Bid</a></li>
+				<li><a href="../how-it-works/bank-owned.html">For Bank Owned</a></li>
+				<li><a href="../how-it-works/make-an-offer.html">For Make an Offer</a></li>
+			</ul>
+        </li>
+        <!--
+        <li>
+
+			<a class="dropdown_handle" href="http://www.biddinghouse.com/buyers">Buying</a>
+			<ul class="submenu">
+				<li class="subHead"><a href="http://www.biddinghouse.com/property/search?property=res">All Residential</a></li>
+										<li><a href="http://www.biddinghouse.com/property/search?property=res&subtype=49">Other</a></li>
+										<li class="subHead"><a href="http://www.biddinghouse.com/property/search?property=comm">All Commercial</a></li>
+										<li><a href="http://www.biddinghouse.com/property/search?property=comm&subtype=20">Commercial Shops</a></li>
+												<li><a href="http://www.biddinghouse.com/property/search?property=comm&subtype=28">Commercial Office/Space</a></li>
+												<li><a href="http://www.biddinghouse.com/property/search?property=comm&subtype=30">Institutional Land</a></li>
+												<li><a href="http://www.biddinghouse.com/property/search?property=comm&subtype=31">Agricultural/Farm Land</a></li>
+												<li><a href="http://www.biddinghouse.com/property/search?property=comm&subtype=32">Hotel/Resorts</a></li>
+												<li><a href="http://www.biddinghouse.com/property/search?property=comm&subtype=34">Time Share</a></li>
+												<li><a href="http://www.biddinghouse.com/property/search?property=comm&subtype=41">Ware House</a></li>
+												<li><a href="http://www.biddinghouse.com/property/search?property=comm&subtype=50">Other</a></li>
+									</ul>
+        </li>
+        <li>
+			<a class="dropdown_handle" href="http://www.biddinghouse.com/sellers">Selling</a>
+			<ul class="submenu">
+				<li class="subHead"><a href="javascript:void(0);">Commercial</a></li>
+				<li><a href="http://www.biddinghouse.com/sell-commercial">All commercial</a></li>
+				<li class="subHead"><a href="javascript:void(0);">Residential</a></li>
+				<li><a href="http://www.biddinghouse.com/sell-private-sellers">Private sellers</a></li>
+				<li><a href="http://www.biddinghouse.com/sell-agents-and-brokers">Agents and brokers</a></li>
+				<li><a href="http://www.biddinghouse.com/sell-receivers-and-administrators">Receivers and administrators</a></li>
+				<li><a href="http://www.biddinghouse.com/sell-institutions">Institutions</a></li>
+				<li><a href="http://www.biddinghouse.com/sell-landlords-and-investors">Landlords and Investors</a></li>										
+			</ul>
+        </li>
+        <li><a href="http://www.biddinghouse.com/freeValuation">Free Valuations</a></li>-->
+        <!--        <li class="bigfont"><a href="http://www.biddinghouse.com/admin"><i class="fa fa-lock"></i> Admin Login</a></li>-->
+        <li><a href="../user/login.html"><i class="fa fa-lock"></i>&nbsp; Sign in</a></li>
+		<li class="more-nav"><a href="#"><i class="nav-icon"></i></a></li>
+        								
+								<!--<li><a href="#" class="menuHandle"><i class="fa fa-bars"></i> Menu</a></li>-->
+							</ul>
+						</div>
+                    </div>
+                </div>
+            </div>
+			
+            <!--<div class="header-bot no-shadow">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                </nav>
+            </div>-->
+        </div>
+    </header> <section id="inner-banne">
+    <div class="inner-banner-con">
+            <div class="inner-banner-head-con">
+                    <div class="inner-banner-head">Property Details</div>
+            </div>
+    </div>
+    <img title="" alt="" src="../images_lat/banner/property-list-banner.jpg"                                                                                            >
+</section>
+<section class="container clearfix">
+    <div class="error-section">
+		<img src="../images_lat/404.png" alt="">
+		<div class="sorry-title">Sorry we couldn't find the page you were looking for</div>
+		<div class="error-big-title">Would you like to go to homepage instead?</div>
+		<a href="../index.html" class="goback">Go to Home Page</a>
+    </div>
+</section>    
+
+                                                                                                                                    <!-- Footer Starts Here -->
+    <footer>
+		<script type="text/javascript" src="../js_lat/jquery.cookie.js"></script>
+		<script type="text/javascript" src="../../translate.google.com/translate_a/fa0d8.txt?cb=googleTranslateElementInit"></script>	
+	  
+		<div id="google_translate_element" style="display: none;"></div>
+		<script type="text/javascript">
+			var browserLang = navigator.language;
+			$.cookie('googtrans', '/en/'+browserLang);
+			function googleTranslateElementInit() {
+				new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+			}
+		</script>
+        <div class="container">
+            <div class="footer-nav">
+                
+                <ul class="wow fadeInUp" data-wow-duration=".4s" data-wow-delay=".8s">
+                    <li class="head footer_li"><a href="javascript:void(0);">General <span class="expand-new"><i class="fa parent-plus fa-plus"></i></span></a>
+                        <ul id="fot-dropdown" class="ul_main ul_1" data="1.html">
+                            <li><a href="../aboutus.html">About Us</a></li>
+<!--                            <li><a href="http://www.biddinghouse.com/feesandcharges">Fees andCharges</a></li>-->
+<!--                            <li><a href="javascript:void(0);">How does it work</a></li>
+                            <li><a href="javascript:void(0);">What we advertise</a></li>
+                            <li><a href="javascript:void(0);">BOMH and competitors</a></li>-->
+<!--                            <li><a href="http://www.biddinghouse.com/careers">Careers</a></li>-->
+<!--                            <li><a href="javascript:void(0);">Reviews</a></li>-->
+<!--                            <li><a href="http://www.biddinghouse.com/blog">Blog</a></li>-->
+                            <li><a href="../contactus.html">Contact us</a></li>                            
+<!--                            <li><a href="http://www.biddinghouse.com/charity">Charity foundation</a></li>-->
+                            <li><a href="../best-agents-and-accreditation.html">Best Agents and Accreditations</a></li>
+                            <!--li><a href="http://www.biddinghouse.com/freeValuation">Free Valuations</a></li-->
+                            <li><a href="../sell-your-property-online.html">Sell Property</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="wow fadeInUp" data-wow-duration=".4s" data-wow-delay=".8s">
+                    <li class="head footer_li"><a href="javascript:void(0);">Buying <span class="expand-new"><i class="fa parent-plus fa-plus"></i></span></a>
+                        <ul id="fot-dropdown" class="ul_main ul_2" data="2.html">
+                            <li class="subHead"><a href="../property/searchdbe8.html?property=res">All Residential</a></li>
+										<li><a href="../property/search9fdb.html?property=res&amp;subtype=49">Other</a></li>
+						<!--				<li class="subHead"><a href="http://www.biddinghouse.com/property/search?property=comm">All Commercial</a></li>-->
+				<!--						<li><a href="http://www.biddinghouse.com/property/search?property=comm&subtype=20">Commercial Shops</a></li>-->
+						<!--						<li><a href="http://www.biddinghouse.com/property/search?property=comm&subtype=28">Commercial Office/Space</a></li>-->
+						<!--						<li><a href="http://www.biddinghouse.com/property/search?property=comm&subtype=30">Institutional Land</a></li>-->
+						<!--						<li><a href="http://www.biddinghouse.com/property/search?property=comm&subtype=31">Agricultural/Farm Land</a></li>-->
+						<!--						<li><a href="http://www.biddinghouse.com/property/search?property=comm&subtype=32">Hotel/Resorts</a></li>-->
+						<!--						<li><a href="http://www.biddinghouse.com/property/search?property=comm&subtype=34">Time Share</a></li>-->
+						<!--						<li><a href="http://www.biddinghouse.com/property/search?property=comm&subtype=41">Ware House</a></li>-->
+						<!--						<li><a href="http://www.biddinghouse.com/property/search?property=comm&subtype=50">Other</a></li>-->
+						                        </ul>
+                    </li>
+                </ul>
+                <ul class="wow fadeInUp" data-wow-duration=".4s" data-wow-delay=".8s">
+                    <li class="head footer_li"><a href="javascript:void(0);">Selling <span class="expand-new"><i class="fa parent-plus fa-plus"></i></span></a>
+                        <ul id="fot-dropdown" class="ul_main ul_3" data="3.html">
+                           	<li><a href="../sell-commercial.html">All commercial</a></li>
+        			<li><a href="../sell-private-sellers.html">Private sellers</a></li>
+				<li><a href="../sell-agents-and-brokers.html">Agents and brokers</a></li>
+				<li><a href="../sell-receivers-and-administrators.html">Receivers and administrators</a></li>
+				<li><a href="../sell-institutions.html">Institutions</a></li>
+				<li><a href="../sell-landlords-and-investors.html">Landlords and Investors</a></li>										
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="wow fadeInUp" data-wow-duration=".4s" data-wow-delay=".8s">
+                    <li class="head footer_li"><a href="javascript:void(0);">Help Centre<span class="expand-new"><i class="fa parent-plus fa-plus"></i></span></a>
+                        <ul id="fot-dropdown" class="ul_main ul_4" data="4.html">
+                            <li><a href="../getting-started.html">Getting Started</a></li>
+                            <li><a href="../faqs.html">FAQ's</a></li>
+                            <li><a href="../buying-online.html">Buying Online</a></li>
+                            <li><a href="../feedback.html">Feedback</a></li>
+                            <li><a href="../complaints.html">Complaints Procedure</a></li>
+                        </ul>
+                    </li>
+					<ul class="live-chat">
+						<li class="head footer_li"><a href="javascript:void(0);">Live Chat <span class="expand-new"><i class="fa parent-plus fa-plus"></i></span></a>
+							<ul id="fot-dropdown" class="ul_main ul_5" data="5.html">
+								<!--li><a href="javascript:void(0);"><span><img src="http://www.biddinghouse.com/images_lat/icons/fot-phone-icon.png" /></span>+91-9899909091</a></li -->
+								<li><a href="javascript:void(0);"><span><img src="../images_lat/icons/fot-24hrs-icon.png" /></span> Lines open <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM-7PM</a></li>
+							</ul>
+						</li>
+					</ul>
+				</ul>
+<!--                <ul>
+                    <li class="head footer_li"><a href="javascript:void(0);">Selling <span class="expand-new"><i class="fa parent-plus fa-plus"></i></span></a>
+                        <ul id="fot-dropdown" class="ul_main ul_5" data="5">
+                            <li><a href="javascript:void(0);">About selling online</a></li>
+                            <li><a href="javascript:void(0);">Selling FAQS</a></li>
+                            <li><a href="javascript:void(0);">Valuations</a></li>
+                            <li><a href="javascript:void(0);">Conveyancing</a></li>
+                            <li><a href="javascript:void(0);">EPCs</a></li>
+                            <li><a href="javascript:void(0);">Mortgages</a></li>
+                            <li><a href="javascript:void(0);">Moving home services</a></li>
+                        </ul>
+                    </li>
+                </ul>-->
+<!--                <ul>
+                    <li class="head footer_li"><a href="javascript:void(0);">Buying <span class="expand-new"><i class="fa parent-plus fa-plus"></i></span></a>
+                        <ul id="fot-dropdown" class="ul_main ul_6" data="6">
+                            <li><a href="javascript:void(0);">About selling online</a></li>
+                            <li><a href="javascript:void(0);">Selling FAQS</a></li>
+                            <li><a href="javascript:void(0);">Valuations</a></li>
+                            <li><a href="javascript:void(0);">Conveyancing</a></li>
+                            <li><a href="javascript:void(0);">EPCs</a></li>
+                            <li><a href="javascript:void(0);">Mortgages</a></li>
+                            <li><a href="javascript:void(0);">Moving home services</a></li>
+                        </ul>
+                    </li>
+                </ul>-->
+<!--                <ul>
+                    <li class="head footer_li"><a href="javascript:void(0);">Resources <span class="expand-new"><i class="fa parent-plus fa-plus"></i></span></a>-->
+<!--                        <ul id="fot-dropdown" class="ul_main ul_7" data="7">-->
+<!--                            <li><a href="http://www.biddinghouse.com/vip-program">VIP Program</a></li>-->
+<!--                            <li><a href="http://www.biddinghouse.com/sell-agents-and-brokers">Brokers & Agents</a></li>-->
+<!--                            <li><a href="http://www.biddinghouse.com/finance">Financing Options</a></li>-->
+<!--                            <li><a href="http://www.biddinghouse.com/conveyancing">Conveyancing and Attorney Services</a></li>-->
+<!--                            <li><a href="http://www.biddinghouse.com/mortgages">Mortgages</a></li>-->
+<!--                            <li><a href="http://www.biddinghouse.com/removals">Removals and Utilities</a></li>-->
+<!--                            <li><a href="http://www.biddinghouse.com/epc">EPC's</a></li>-->
+                            <!--<li><a href="">Licensing</a></li>-->
+<!--                            <li><a href="http://www.biddinghouse.com/sell-receivers-and-administrators">Receivers and Administrators</a></li>-->
+<!--                        </ul>-->
+                    <!--</li>-->
+<!--                </ul>-->
+                <ul class="wow fadeInUp" data-wow-duration=".4s" data-wow-delay=".8s">
+                    <li class="head footer_li"><a href="javascript:void(0);">Legal <span class="expand-new"><i class="fa parent-plus fa-plus"></i></span></a>
+                        <ul id="fot-dropdown" class="ul_main ul_6" data="6.html">
+                            <li><a href="../auction-options.html">Selling options</a></li>
+                            <li><a href="../terms-of-use.html">Terms of use</a></li>
+                            <li><a href="../privacy-policy.html">Privacy statement</a></li>
+                            <li><a href="../cookies-policy.html">Cookies Policy</a></li>
+                            <li><a href="../feesandcharges.html">Fees and Charges</a></li>
+                        </ul>
+                    </li>
+                </ul>
+				<ul class="wow fadeInUp" data-wow-duration=".4s" data-wow-delay=".8s">
+                    <li class="head footer_li">
+                        <ul id="fot-dropdown" class="ul_main ul_7" data="7.html">
+                            <li>
+                                Keep up to date with all the latest news at BiddingHouse. Subscribe to our newsletter.
+                            </li>                            
+                            <li>
+                                <form name='newsletter_form' id='newsletter_form'>
+									<label class="your-email">Your E-mail</label>
+                                    <input type="text" placeholder="Enter e-mail" name="newsletter_email" id="newsletter_email"/>
+                                    <button type="submit" name="" value="Subscribe" class="sb-btn"></button>
+                                </form>
+                            </li>
+                            <li class="social-link">                                
+                                <a href="../../external.html?link=https://www.facebook.com/Biddinghouse-821216468023837/" target="_blank"><img src="../images_lat/icons/facebook-icon.png" /></a>
+								<a href="../../external.html?link=https://twitter.com/bidding_house" target="_blank"><img src="../images_lat/icons/twiter-icon.png" /></a>
+								<a href="../../external.html?link=https://plus.google.com/117946829160514908167/about" target="_blank"><img src="../images_lat/icons/google-plus.png" /></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+        <div class="footer-social-copyRight">
+            <div class="container">
+                <div class="copyRight wow fadeInLeft"><span>&copy; Copyright</span> BiddingHouse 2016. BiddingHouse.com and the associated logo are registered trademarks. All rights reserved.</div>
+                <div class="social-section">
+                    <!--<div class="footer-logo">
+                        <a href="">
+                            <img src="http://www.biddinghouse.com/images_lat/bidding_house_logo_white.png" alt="" title="" />
+                        </a>
+                    </div>-->
+                    <div class="footer-social-icon">
+                        <ul>
+                            <li class="facebookIcon-new"><a href="../../external.html?link=https://www.facebook.com/Biddinghouse-821216468023837/" target="_blank">&nbsp;</a></li>
+                            <li class="twitterIcon-new"><a href="../../external.html?link=https://twitter.com/bidding_house" target="_blank">&nbsp;</a></li>
+                            <li class="google-plusIcon-new"><a href="../../external.html?link=https://plus.google.com/117946829160514908167/about" target="_blank">&nbsp;</a></li>
+<!--                            <li class="inIcon-new"><a href="https://www.linkedin.com/company/bidonmyhouse" target="_blank">&nbsp;</a></li>
+                            <li class="youtubeIcon-new"><a href="https://www.youtube.com/watch?v=mZuS0Fa_UL0" target="_blank">&nbsp;</a></li>-->
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="footer-bot"><a href="javascript:void(0)">
+            <img src="../images_lat/icons/fot-up-arrow.png" /></a></div>
+        <div class="clear"></div>
+    </footer>
+	
+	<!--/// </div> .sideBarMenu_wrapper //-->
+	
+    <!-- Footer Ends Here -->
+	<script src="../js_lat/slick.min.js"></script>
+	<script src="../js_lat/jquery.sliderPro.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#propertySlider').sliderPro({
+				width: 920,
+				height: 368,
+				orientation: 'vertical',
+				fade:true,
+				loop: false,
+				arrows: false,
+				buttons: false,
+				thumbnailsPosition: 'right',
+				thumbnailPointer: true,
+				thumbnailWidth: 240,
+				thumbnailArrows: true,
+				breakpoints: {
+					800: {
+						thumbnailsPosition: 'bottom',
+						thumbnailWidth: 270,
+						thumbnailHeight: 100
+					},
+					500: {
+						thumbnailsPosition: 'bottom',
+						thumbnailWidth: 120,
+						thumbnailHeight: 50
+					}
+				}
+			});
+			
+			function subscribeNewsletter(){
+				$('#newsletter_form').validate({
+					rules: {
+						newsletter_email: {
+							required: true,
+							email: true
+						}
+					},
+					submitHandler: function (form) {
+						$.ajax({
+							url: 'http://www.biddinghouse.com/newsletter',
+							type: 'post',
+							data: $('#newsletter_form').serialize(),
+							dataType: 'json',
+							beforeSend: function () {
+								$('#imageLoader').show();
+							},
+							success: function (data) {
+								// console.log(data);
+								if (data.error) {
+									alert(data.errorMsg);
+									// var html = "<div class='alert alert-info' style='text-align:center;padding:15px;color:red'>";
+									// html += "<p>" + data.errorMsg + "</p>" ;
+									// html += '</div>';
+									// $("#user_reg_error").html(html) ;
+								} else {
+									alert(data.ERROR_MSG);
+									//$("#user_reg_form").html("<div class='alert alert-info' style='text-align:center;padding:15px;'> <strong>Thank you for registration</strong></div>");
+								}
+							}
+						});
+						return false;
+					}
+				});
+			}
+			
+			subscribeNewsletter();
+			
+			$('.client_slider').slick({
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				dots: true,
+				arrows:false,
+				centerMode: true,
+				focusOnSelect: true,
+				responsive: [
+					{
+						breakpoint: 900,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1,
+							infinite: true,
+							dots: true
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 600,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					}
+				]
+			});
+			
+			$('.partner_slider').slick({
+				slidesToShow: 5,
+				slidesToScroll: 2,
+				dots: false,
+				arrows:true,
+				responsive: [
+					{
+						breakpoint: 1300,
+						settings: {
+							slidesToShow: 5,
+							slidesToScroll: 2,
+							infinite: true,
+						}
+					},
+					{
+						breakpoint: 1024,
+						settings: {
+							slidesToShow: 4,
+							slidesToScroll: 2
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 360,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					}
+				]
+			});
+			
+			// Menu
+			var $mainNav = $('#menu').children('ul');
+			$mainNav.on('mouseenter', 'li', function(){
+				var $this = $(this), $subMenu = $this.children('ul');
+				$subMenu.stop(true, true).slideDown(200);
+			}).on('mouseleave', 'li',function(){
+				$(this).children('ul').stop(true, true).slideUp(200);
+			});
+			
+			
+			
+			/* $('.menuHandle').click(function(){
+				$('.sideBarMenu_wrapper').toggleClass('open');
+				if ( $('body').hasClass("lock") ) {
+					setTimeout( function(){ $('body').removeClass('lock') },100);
+					setTimeout( function(){ 
+						$('.sideBarMenu_wrapper').removeClass('zIndex');
+						$('.menuOverlay').hide();
+					},100);
+				} else {
+					setTimeout( function(){ $('body').addClass('lock') },100);
+					setTimeout( function(){
+						$('.sideBarMenu_wrapper').addClass('zIndex');
+						$('.menuOverlay').show();
+					},0);
+				}
+				return false;
+			});
+			
+			$('.menuOverlay').click(function(){
+				$('.sideBarMenu_wrapper').removeClass('open');
+				setTimeout( function(){ $('.sideBarMenu_wrapper').removeClass('zIndex') },10);
+				setTimeout( function(){ $('body').removeClass('lock') },100);
+			}); 
+			
+			$('.dropdown_handle').on("click", function (e) {
+				$('.dropdown_handle').children('i').addClass('fa-caret-down');
+				$('.dropdown_handle').children('i').removeClass('fa-caret-up');
+				$(this).children('i').addClass('fa-caret-up');
+				$(this).children('i').removeClass('fa-caret-down');
+				
+				e.stopPropagation();
+				if ($(this).attr('id') == "selected") {
+					$(this).parents('li').children('.submenu').slideToggle();
+					$(this).children('i').addClass('fa-caret-down');
+					$(this).children('i').removeClass('fa-caret-up');
+				} else {
+					$('.submenu').slideUp('slow');
+					$(this).parents('li').children('.submenu').slideDown();
+					$("a.dropdown_handle").removeAttr("id");
+					$(this).attr("id", "selected");
+				}
+				return false;
+			});*/
+			
+			$('.footer-bot a').click(function(){
+				$('html, body').animate({scrollTop:0},400);
+			});
+		});
+	</script>
+	        <!--Start of Zopim Live Chat Script-->
+        <script type="text/javascript">
+            window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+            d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+            _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+            $.src="../../v2.zopim.com/index62ad.html?3htgD8XQEbO08Ov5tXDsDfD2LIrm2SZA";z.t=+new Date;$.
+            type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+        </script>
+        <!--End of Zopim Live Chat Script-->
+                    <!--Start of google analytics Script-->
+            <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-74220406-1', 'auto');
+                ga('send', 'pageview');
+            </script>
+            <!--End of google analytics Script-->
+                
+</body>
+
+<!-- Mirrored from www.biddinghouse.com/fonts/2 by HTTraQt Website Copier/1.x [Karbofos 2012-2017] गुरु, 01 नवम्बर 2018 13:47:32 GMT -->
+</html>

@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('owl.carousel.css');
+@import url('owl.theme.css');
+@import url('fontface.css');
+html{height:100%;}
+body{font-family:"ubuntu-r-webfont"; color:#000; font-weight:400; height:100%; margin:0; font-size:14px;}
+.wrapper {min-height: 100%; width:100%; position: relative;}
+.footer-fix {width: 100%; position: absolute; bottom: 0; left: 0;}
+a, a:hover, a:focus{text-decoration:none; outline:0 !important;}
+ul{padding-left:0; list-style-type:none;}
+
+/**-----------------------------Common CSS------------------------*/
+.feature_list .owl-slider .item a.ttl, .social, p.btm_txt{display:block;}
+
+strong, b, strong, table th{font-weight:normal;}
+
+.banner-content form button{text-transform:uppercase;}
+
+a, button, .contact-sec a, a{outline:0 !important;}
+.social{width:100%;}
+.banner-sec, .footer-fix{display:block; width:100%; overflow:hidden;}
+
+/**-----------------------------Margin-Sec-------------------------*/
+.banner-content h1{margin-bottom:30px;}
+.feature_list .owl-slider .item a.ttl{margin-bottom:10px;}
+p.btm_txt{margin-bottom:0;}
+p.btm_txt{margin-top:10px;}
+.feature_list .owl-slider .item a.ttl{margin-top:10px;}
+.social{margin-top:20px;}
+
+/**-----------------------------Font-Family-Sec-------------------------*/
+.about-sec, .cms_sec, .step-inner h4{font-family:"ubuntu-r-webfont";}
+.about-sec h1, .more_link a, .feature_list .owl-slider .item a.ttl, .footer-nav ul li a, .social ul li a, .social h4{font-family:"ubuntu-m-webfont";}
+.step-inner p, .feature_list .owl-slider .item p, p.btm_txt{font-family:"ubuntu-l-webfont";}
+.banner-content h1{font-family:"Chaparral-Pro-Bold-Caption_10137";}
+.banner-content form button{font-family:"ubuntu-b-webfont";}
+
+/**-----------------------------Font-Size-Sec-------------------------*/
+.banner-content h1{font-size:60px;}
+.about-sec h1{font-size:30px;}
+p.btm_txt{font-size:13px;}
+.banner-content form button, .more_link a, .step-inner p, .feature_list .owl-slider .item p{font-size:14px;}
+.footer-nav ul li a, .social ul li a, .social h4{font-size:16px;}
+.feature_list .owl-slider .item a.ttl{font-size:18px;}
+.banner-content a.adv_src i, .step-inner h4{font-size:24px;}
+
+/**-----------------------------Color-Sec-------------------------*/
+.banner-content h1, .banner-content form button, .banner-content a.adv_src, .social ul li a{color:#fff;}
+.banner-content form .form-control{color:#b7b7b7;}
+.about-sec h1, .step-inner h4, .feature_list .owl-slider .item a.ttl{color:#000;}
+.more_link a{color:#eb3751;}
+.step-inner p, .feature_list .owl-slider .item p{color:#333;}
+.social h4, p.btm_txt{color:#eee;}
+
+/*----------------------Header and Nav---Css-----------------------------------*/
+/*header{position:fixed;}*/
+header{display:block; width:100%; background:#fff; -webkit-box-shadow: 0 8px 6px -6px #D7D7D7; -moz-box-shadow: 0 8px 6px -6px #D7D7D7; box-shadow: 0 8px 6px -6px #D7D7D7; -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.13); -moz-box-shadow: 0 2px 2px rgba(0,0,0,.13); box-shadow: 0 2px 2px rgba(0,0,0,.13); z-index:999;}
+header .navbar{margin-bottom:0; border:none; min-height:82px;}
+header .navbar-brand{max-height:100px; width:auto; max-width:100%; padding:15px 0px;}
+header .navbar-brand img{max-height:52px; width:auto; max-width:100%;}
+header .navbar-nav{margin-top:32px;}
+header .navbar li a {font-size: 19px; color:#595860; font-family:"arial-webfont"; padding:5px 14px; font-weight:normal;}
+header .navbar li:first-child a{margin-left:30px;}
+header .nav>li>a:focus, header .nav>li>a:hover, header .nav .open>a, header .nav .open>a:focus, header .nav .open>a:hover{background:none;}
+header .nav>li>a:focus{background:none;}
+header .navbar ul.reg-link li a{border:0; padding:0px 15px; display:inline-block; position:relative; font-family:"ubuntu-r-webfont"; color:#eb3751;}
+header .navbar ul.reg-link li a.login{padding-right:10px; border-right:1px solid #cccccc; }
+header .navbar ul.reg-link li a.register{padding-left:6px; padding-right:0;}
+header .navbar ul.reg-link li a.login, header .navbar ul.reg-link li a.register{margin-left:0;}
+/*ul.reg-link{display:none;}*/
+ul.reg-link{display:inline-block; position:relative; padding-top:33px;}
+ul.reg-link li a{margin:0 !important;}
+/*.fixed {position: fixed; top: 0; z-index: 1; width:100%;}*/
+
+
+/**-----------------------------Closed---Header and Nav-Sec-------------------------*/
+
+
+/**-----------------------------Banner-Sec-------------------------*/
+.banner-sec{background-position: center center; background-repeat: no-repeat; background-size: cover; overflow: hidden; position: relative; -webkit-transition: height .5s ease-out; transition: height .5s ease-out; display:block; width:100%; overflow:hidden;}
+.banner-sec figure img{max-width:100%; height:auto;}
+.banner-content{position:absolute; top:14em; margin-left:3em; z-index:20;}
+.banner-content h1{text-shadow: 1px 2px 2px rgba(90, 90, 90, .6);}
+.banner-content form{background:rgba(0, 0, 0, 0.4); padding:15px; border-radius:6px; text-align:left;}
+.banner-content form .form-control{border-radius:0; width:230px; margin-right:15px;}
+.banner-content form button{border-radius:0; background:#ae242a; border:none; text-align:center; width:124px; padding-top:8px;}
+.banner-content a.adv_src{margin-left:15px; display:inline-block; position:relative;}
+.banner-content a.adv_src i{padding:6px 12px;  background:#ae242a; text-align:center; display:inline-block; position:relative; vertical-align:middle; font-weight:normal !important; }
+.banner-content form select, .banner-content form select option{cursor:pointer;}
+
+/*----------------------Mid--Part---Css-----------------------------------*/
+.mid-part{padding-bottom:14em;}
+
+/**-----------------------------About-sec-------------------------*/
+.about-sec{padding:35px 0px;}
+.about-sec h1{margin-top:0;}
+.about-sec hr{width:160px; border-top-width:2px; border-top-color:#eb3751; margin-top:0px; margin-bottom:25px;}
+.about-sec .abt-link a{padding:1px; text-align:center; display:inline-block;}
+
+/**-----------------------------How-Work-sec-------------------------*/
+.how-work{background:#f7f7f7; border-top:1px solid #f1f1f1;  border-bottom:1px solid #f1f1f1;}
+.step-inner p{margin-left:auto; margin-right:auto; float:none; margin-bottom:5px;}
+.step-inner figure img{max-height:75px; width:auto; max-width:100%; opacity:.6;}
+.step-inner figure img {vertical-align: middle; -webkit-transform: translateZ(0); transform: translateZ(0); -webkit-backface-visibility: hidden; backface-visibility: hidden; -moz-osx-font-smoothing: grayscale; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;  -webkit-transition-property: transform; transition-property: transform;}
+.step-inner:hover figure img{-webkit-transform: scale(1.1); transform: scale(1.1);}
+.step-inner:hover figure img{opacity:1;}
+
+/**-----------------------------Featured---Listings---sec-------------------------*/
+.feature_list{text-align:center; margin-left: auto; margin-right: auto; float:none;}
+.feature_list .owl-slider{max-width:100%; display:block; float: none; margin-left: auto; margin-right: auto; margin-top:30px;}
+.feature_list .owl-slider .item{margin-right:15px; margin-left:15px; -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.2); box-shadow: 0 1px 4px rgba(0,0,0,0.2); padding-bottom:20px; margin-bottom:6px;}
+.feature_list  img{max-width:100%;}
+.feature_list .owl-slider .item a.ttl, .feature_list .owl-slider .item p{padding:0px 15px;}
+
+
+
+/**-----------------------------footer-sec-------------------------*/
+.footer-fix{display:block; width:100%; background:none; font-size:14px;  padding:0px 0px 15px 0px; background:#282e3e; color:#fff;}
+.footer-nav{border-bottom:1px solid rgba(255, 255, 255, 0.3);}
+.footer-nav ul{margin-bottom:0;}
+.footer-nav ul li{display:inline-block; position:relative; padding:11px 30px;}
+.footer-nav ul li a{color:#eee;}
+
+.social ul li a{text-align:center;}
+.social h4, .social ul, .social ul li, .social h4 i{display:inline-block; position:relative;}
+.social ul li, .social h4 i{margin-left:12px;}
+.social h4{margin-right:7px;}
+.social ul li a{height:30px; width:30px; display:block; background:#eeeeee; border-radius:100%; padding:4px; color:#414751;}
+
+
+/**-----------------------------backtotop-sec-------------------------*/
+.btn-backtotop{width:40px; height:40px; line-height:37px; position:fixed; bottom:0px; right:0%; z-index:100; font-size:16px; text-align:center; color:#fff; background:#eb3751;}
+.btn-backtotop:focus{color:#000;}
+.btn-backtotop:hover{color:#000; border-color:#000;}
+
+/**-----------------------------Right Social Buttons-sec-------------------------*/
+.social-buttons {margin: -10px 0 0 -8px; position: fixed; z-index:30; right:0; height:100%; vertical-align:middle; top:37%; text-align:center;}
+.social-buttons ul {list-style: none;}
+.social-buttons ul li {Margin-top:5px; -webkit-transition: width 0.5s ease; -moz-transition: width 0.5s ease; -o-transition: width 0.5s ease; transition: width 0.5s ease; height:50px; width:48px;}
+.social-buttons ul li i {font-size: 24px; padding: 8px; padding-top:15px;}
+a.facebook li {background: #4b699e; color: #fff; border-bottom:2px solid #3b5998;}
+a.twitter li {background: #55acee; color: #fff;}
+a.pinterest li {background: #bc3e34; color: #fff;}
+a.gplus li {background: #d05d46; color: #fff;}
+.social-buttons ul a li:hover {background: #595860; border-bottom-color:#444;}
+
+
+
+/*-------------CMS----------CSS-----*/
+.cms_sec{color:#818080;}
+.cms_sec h4{font-family:"ubuntu-m-webfont"; font-size:20px; margin-top:30px; color:#666;}
+.cms_sec h4:first-child{margin-top:0;}
+.cms_sec ul, .cms_sec ul li ul{list-style-type:disc; list-style-position:inside;}
+.cms_sec ol, .cms_sec ol li ol{list-style-position:inside;}
+.cms_sec ul li ul,  .cms_sec ol li ol{padding-left:15px;}
+.cms_sec b, .cms_sec strong, .cms_sec span{display:block; margin-bottom:10px; margin-top:10px;}
+.cms_sec p b, .cms_sec p b b, .cms_sec p strong, .cms_sec p strong strong,  .cms_sec p span, .cms_sec ul b, .cms_sec ul strong, .cms_sec ul span, .cms_sec ol b, .cms_sec ol strong, .cms_sec ol span, .cms_sec span span, .cms_sec p b span, .cms_sec p strong span, .cms_sec  b span, .cms_sec strong span{display:inline-block; position:relative; margin:0;}
+.cms_sec ol{padding-left:0px;}
+.cms_sec ol li ol li, .cms_sec ol li ul li{list-style-type:circle !important;}
+.cms_sec .table{font-weight:normal; margin-top:30px; background: #fff; box-shadow: 0px 1px 2px 0px #bfbfbf; margin-bottom: 20px; border:0;}
+.cms_sec .table th{font-family:"ubuntu-m-webfont"; font-weight:normal;}
+/*--Closed---*/
+
+/*------------FOOTABLE-SEC-BREAKPOINT----------------*/
+.footable.breakpoint > tbody > tr > td.expand:after{border-radius:100%;}
+.table tr .expand, .footable > thead > tr > th, .footable > thead > tr > td{position:relative;}
+.table>tbody>tr>td, .table>thead>tr>th{ vertical-align:middle;}
+.footable.breakpoint > tbody > tr > td.expand:after{
+ position:absolute; bottom:10px; right:10%; bottom:30%; content:'+';
+ width:20px; height:20px; background:#669933; text-align:center;
+ font:normal 18px/20px Arial, Helvetica, sans-serif; color:#FFF;}
+ .footable.breakpoint > tbody > tr:hover > td.expand:after{background:#6C0; text-shadow:#669933 0.014em 0.014em; text-decoration:none;}
+.footable.breakpoint > tbody > tr.footable-detail-show > td.expand:after{ content:'-';}
+.footable.breakpoint > tbody > tr:hover:not(.footable-row-detail){cursor:pointer; background:#f4f4f4;}
+.footable-row-detail-inner form, .footable-row-detail-inner h2{display:inline-block;}
+.footable-cell-detail{background:#f4f4f4;}
+
+/*----------------------Hover---Css-----------------------------------*/
+.banner-content form button:hover, .banner-content a.adv_src:hover i{color:#fff; background:#eb3751;}
+header .navbar li a:hover, ul.reg-link li a:hover, .more_link a:hover, .feature_list .owl-slider .item a.ttl:hover{color:#ae242a !important;}
+.footer-nav ul li a:hover{color:#fff;}
+.social ul li a:hover{background:#fff; color:#ae242a;}
+
+/*----------------------Browser----Hack---Css-----------------------------------*/
+
+/*safari 5.1-6*/
+_::-moz-svg-foreign-content, :root .nav-sec .navbar-nav > li > a{padding:10px 11px;}
+
+
+/*----------------------min-responsive-css-----------------------------------*/
+@media (min-width:1200px){
+.container {width: 1057px; max-width:100%; display:block; float: none; margin-left: auto; margin-right: auto;}
+}
